@@ -49,11 +49,13 @@ cd src && yarn add body-parser@1.20.2 cross-fetch@3.1.5 eventsource-parser@0.1.0
 
 如果使用以下python代码调用:
 
-  import os
-  import openai
-  openai.organization = "org-XQKNvXXEBZAJl9Z9qrTzpIYf"
-  openai.api_key = 'xxxxxxx'
-  openai.api_base = "https://xxxxx.jp.apigw.tencentcs.com/releas/v1"   注意: 此处请加上v1版本⚠️⚠️⚠️⚠️
-  chat_completion = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=[{"role": "user", "content": "Hello world"}])
+```
+import os
+import openai
+openai.organization = "org-XQKNvXXEBZAJl9Z9qrTzpIYf"
+openai.api_key = 'xxxxxxx'
+openai.api_base = "https://xxxxx.jp.apigw.tencentcs.com/releas/v1"   注意: 此处请加上v1版本⚠️⚠️⚠️⚠️
+chat_completion = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=[{"role": "user", "content": "Hello world"}])
+```
 
 
