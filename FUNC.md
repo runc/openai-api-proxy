@@ -40,5 +40,26 @@ cd src && yarn add body-parser@1.20.2 cross-fetch@3.1.5 eventsource-parser@0.1.0
 
 ## Proxy的使用
 
+🔥
 使用时将 `https://api.openai.com/` 替换为该路径即可，如 `https://api.openai.com/v1/chat/completions` 替换为 `https://xxxxx.apigw.tencentcs.com/release/v1/chat/completions`
+
+### 注意事项
+
+根据笔者的实践，serverless web函数对外访问的地址为:  https://xxxxxx.jp.apigw.tencentcs.com/release/
+
+如果使用以下python代码调用:
+
+import os
+import openai
+openai.organization = "org-XQKNvXXEBZAJl9Z9qrTzpIYf"
+openai.api_key = 'xxxxxxx'
+openai.api_base = "https://xxxxx.jp.apigw.tencentcs.com/releas/v1"   注意: 此处请加上v1版本⚠️⚠️⚠️⚠️
+
+# openai.Model.list()
+
+# print(models.data[0].id)
+
+# create a chat completion
+chat_completion = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=[{"role": "user", "content": "Hello world"}])
+
 
