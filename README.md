@@ -1,3 +1,8 @@
+## notice
+
+具体函数配置可见serverless web函数[func.md](https://github.com/runc/openai-api-proxy/edit/master/FUNC.md)
+
+
 # openai-api-proxy
 
 可以部署到docker和云函数的OpenAI API代理
