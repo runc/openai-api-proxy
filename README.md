@@ -1,7 +1,8 @@
 ## notice
 
+🔥🔥🔥
 具体函数配置可见serverless web函数[func.md](https://github.com/runc/openai-api-proxy/edit/master/FUNC.md)
-
+🔥🔥🔥
 
 # openai-api-proxy
 
